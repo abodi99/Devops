@@ -5,7 +5,7 @@ FROM python:3.8
 WORKDIR /app
 
 # Copy the Calculator application files into the container
-COPY calculator/ . 
+COPY . /app 
 #COPY requirements.txt /app/
 
 # Install the Python dependencies specified in requirements.txt
