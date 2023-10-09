@@ -34,7 +34,7 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t judevops.azurecr.io/abdulrahman_mofleh-calculater:${{ github.run_number }} .
+          docker build . --file dockerfile --tag judevops.azurecr.io/abdulrahman_mofleh-calculater:${{ github.run_number }}
           docker push judevops.azurecr.io/abdulrahman_mofleh-calculater:${{ github.run_number }}
 
 
