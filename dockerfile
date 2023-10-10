@@ -5,11 +5,11 @@ FROM python:3.8
 WORKDIR /app
 
 # Copy the Calculator application files into the container
-COPY . /app 
+COPY . .
 #COPY requirements.txt /app/
 
 # Install the Python dependencies specified in requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install -r ./requirements.txt
 
 # Set the ENTRYPOINT to run the calculator.py script
 ENTRYPOINT ["python", "calculator.py"]
