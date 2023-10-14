@@ -1,4 +1,4 @@
-from Devops.calculator_helper import CalculatorHelper
+from calculator_helper import CalculatorHelper
 import pytest
 
 class BaseTest:
