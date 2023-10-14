@@ -36,7 +36,7 @@ class TestCalculater(BaseTest):
             self.calc.divide(5, 0)
 
     @pytest.mark.parametrize("a, b, expected_result", [
-    (3, 3, 5),
+    (3, 3, 6),
     #(3, -3, 0),
     #(0, 0, 0),  # Additional test case
     #(-5, 5, 0),  # Additional test case
