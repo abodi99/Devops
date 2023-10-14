@@ -5,4 +5,6 @@ argparse
 munch
 requests
 python-dateutil
-
+requests
+json
+pytest
