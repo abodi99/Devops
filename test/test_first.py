@@ -1,4 +1,4 @@
-from test_base import BaseTest
+#from test_base import BaseTest
 import pytest
 import json
 
@@ -9,6 +9,13 @@ from calculator_api.models.calculation import Calculation
 from calculator_api.models.response import Response
 from calculator_api.api.calculator_api import CalculatorApi
 
+
+class BaseTest:
+    def setup(self):
+        self.calc =  CalculatorHelper()
+
+    def teardown(self):
+        return self.calc
 
 
 class TestCalculater(BaseTest):
