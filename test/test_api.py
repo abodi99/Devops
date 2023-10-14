@@ -3,7 +3,7 @@ import json
 import requests
 
 
-from calculator.calculator_helper import CalculatorHelper
+from Devops.calculator_helper import CalculatorHelper
 from calculator_api.configuration import Configuration
 from calculator_api.api_client import ApiClient
 from calculator_api.models.calculation import Calculation
