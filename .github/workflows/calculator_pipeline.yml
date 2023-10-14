@@ -17,7 +17,7 @@ jobs:
       - name: Start the REST API
         run: python calculator.py --rest &
       - name: Run tests with pytest
-        run: pytest /Devops
+        run: pytest /test
       - name: Skip build and push if any test fails
         uses: actions/github-script@v5
         with: 
