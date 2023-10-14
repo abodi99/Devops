@@ -15,7 +15,7 @@ jobs:
       - name: Install Python packages
         run: pip install -r requirements.txt
       - name: Start the REST API
-        run: python calculator/calculator.py --rest &
+        run: python calculator.py --rest &
       - name: Run tests with pytest
         run: pytest
       - name: Skip build and push if any test fails
