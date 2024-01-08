@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install Python packages
-        run: pip install -r requirements.txt
+        run: pip install -r calculator/requirements.txt
         
       - name: Start the REST API
         run: python calculator.py --rest &
