@@ -16,7 +16,7 @@ jobs:
         run: pip install -r calculator/requirements.txt
         
       - name: Start the REST API
-        run: python calculator.py --rest &
+        run: python calculator/calculator.py --rest &
         
       - name: Run tests with pytest
         run: pytest --junit-xml=report.xml
