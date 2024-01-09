@@ -21,8 +21,13 @@ jobs:
       - name: Start the REST API
         run: python calculator.py --rest &
         
-      - name: Run tests with pytest
-        run: python -m pytest --junit-xml=report.xml
+     # - name: Run tests with pytest
+      #  run: python -m pytest --junit-xml=report.xml
+
+      - name: Run AWS test suite
+        working-directory: ./test
+        run: |
+          python -m pytest --junit-xml=report.xml
         
       - name: Login to Azure Container Registry
         uses: docker/login-action@v1
