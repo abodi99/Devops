@@ -1,6 +1,6 @@
 import pytest
 import json
-from test.baseClass import BaseTest
+from baseClass import BaseTest
 
 class TestCalculater(BaseTest):
     def test_add(self):
