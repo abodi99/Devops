@@ -19,7 +19,7 @@ jobs:
         run: python calculator.py --rest &
         
       - name: Run tests with pytest
-        run: pytest --junit-xml=report.xml
+        run: python -m pytest --junit-xml=report.xml
         
       - name: Login to Azure Container Registry
         uses: docker/login-action@v1
