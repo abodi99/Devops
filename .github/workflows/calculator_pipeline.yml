@@ -19,13 +19,13 @@ jobs:
         run: pip install -r requirements.txt
         
       - name: Start the REST API
-        run: python calculator.py --rest &
+        run: python calculator/calculator.py --rest &
         
      # - name: Run tests with pytest
       #  run: python -m pytest --junit-xml=report.xml
 
       - name: Run AWS test suite
-       # working-directory: ./test
+        working-directory: ./
         run: |
           python -m pytest --junit-xml=report.xml
         
