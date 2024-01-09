@@ -3,12 +3,6 @@ import json
 import requests
 
 
-from calculator.calculator_helper import CalculatorHelper
-from calculator.configuration import Configuration
-from calculator.api_client import ApiClient
-from calculator.models.calculation import Calculation
-from calculator.models.response import Response
-from calculator.api.calculator_api import CalculatorApi
 from ApiBaseclass import ApiBaseTest
 
 
