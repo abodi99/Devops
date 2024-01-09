@@ -1,0 +1,9 @@
+Werkzeug <= 2.1.2   
+flask == 2.1.2   
+flask-restx >= 0.5.1
+argparse
+munch
+requests
+python-dateutil
+requests
+pytest
