@@ -11,7 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          path: Devops/calculator
       - name: Install Python packages
         run: pip install -r requirements.txt
         
