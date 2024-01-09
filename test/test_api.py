@@ -9,7 +9,7 @@ from calculator.api_client import ApiClient
 from calculator.models.calculation import Calculation
 from calculator.models.response import Response
 from calculator.api.calculator_api import CalculatorApi
-from test.ApiBaseclass import ApiBaseTest
+from ApiBaseclass import ApiBaseTest
 
 
 class TestCalculater(ApiBaseTest):
