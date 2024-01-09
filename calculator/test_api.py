@@ -3,13 +3,13 @@ import json
 import requests
 
 
-from calculator.calculator_helper import CalculatorHelper
+from calculator_helper import CalculatorHelper
 from calculator_api.configuration import Configuration
 from calculator_api.api_client import ApiClient
 from calculator_api.models.calculation import Calculation
 from calculator_api.models.response import Response
 from calculator_api.api.calculator_api import CalculatorApi
-from test.ApiBaseclass import ApiBaseTest
+from ApiBaseclass import ApiBaseTest
 
 
 class TestCalculater(ApiBaseTest):
