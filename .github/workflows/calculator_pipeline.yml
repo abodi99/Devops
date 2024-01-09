@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          path: Devops
+      #  with:
+       #   path: 
       - name: Install Python packages
         run: pip install -r requirements.txt
         
