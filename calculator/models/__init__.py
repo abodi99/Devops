@@ -15,5 +15,5 @@
 from __future__ import absolute_import
 
 # import models into model package
-from calculator_api.models.calculation import Calculation
-from calculator_api.models.response import Response
+from calculator.models.calculation import Calculation
+from calculator.models.response import Response
