@@ -23,9 +23,9 @@ import tempfile
 import six
 from six.moves.urllib.parse import quote
 
-from calculator_api.configuration import Configuration
-import calculator_api.models
-from calculator_api import rest
+from calculator.configuration import Configuration
+import calculator.models
+from calculator import rest
 
 
 class ApiClient(object):
