@@ -12,7 +12,7 @@ class ApiBaseTest:
     @classmethod
     def setup_class(cls):
         cfg = Configuration()
-        cfg.host = "http://192.168.1.113:5000"
+        cfg.host = "http://localhost:80/api/v3"
         client = ApiClient(cfg)
         cls.api = CalculatorApi(client)
 
