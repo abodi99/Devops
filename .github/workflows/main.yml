@@ -29,3 +29,16 @@ jobs:
         if: always() # always run even if the previous step fails
         with:
           report_paths: '**/*.xml'
+
+      - name: Login to Azure Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: judevops.azurecr.io
+          username: '${{ secrets.ACR_USERNAME }}'
+          password: '${{ secrets.ACR_PASSWORD }}'
+          
+      - name: Build and Push Docker Image
+        run: |
+          docker build . --file dockerfile --tag judevops.azurecr.io/abdulrahman_mofleh-calculater:${{github.run_number }}
+          docker push judevops.azurecr.io/abdulrahman_mofleh-calculater:${{github.run_number }}
+        if: ${{ success() }}
