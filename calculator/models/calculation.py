@@ -16,7 +16,7 @@ import re  # noqa: F401
 
 import six
 
-from calculator_api.configuration import Configuration
+from calculator.configuration import Configuration
 
 
 class Calculation(object):
